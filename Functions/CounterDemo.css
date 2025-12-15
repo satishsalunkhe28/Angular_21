@@ -3,3 +3,8 @@ body {
     text-align: center;
     font-weight: bold
 }
+div{
+    text-align: center;
+    font-size: larger;
+    color: red
+}
