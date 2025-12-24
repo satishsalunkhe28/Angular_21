@@ -1,0 +1,5 @@
+let cars = ['Tata','Maruti','Hona','BMW','Hyundai']
+
+cars.forEach((val)=>{
+    console.log(val)
+});
