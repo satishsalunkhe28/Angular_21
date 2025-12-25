@@ -1,0 +1,26 @@
+<script>
+    //1. Function declaration
+    function add(a, b) {
+        console.log(`a is ${a}, b is ${b},sum is ${a + b}`);
+    };
+
+
+    //2. Function expression
+    const multiply = function (a, b) {
+        console.log(`a is ${a}, b is ${b}, product is ${a * b}`);
+    };
+    add(10, 20);
+    multiply(10, 20);
+
+    //3. self-invoking function
+    (function(a,b){
+        console.log(`a is ${a}, b is ${b}, difference is ${a - b}`);
+    }(30,10));
+
+
+    //4. Arrow function
+    let divide = (a, b) => {
+        console.log(`a is ${a}, b is ${b}, division is ${a / b}`);
+    };
+    divide(100, 20);
+</script>
