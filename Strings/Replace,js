@@ -1,0 +1,25 @@
+//replace example
+let str = "Visit Microsoft!";
+let newStr = str.replace("Microsoft", "W3Schools");
+console.log(newStr); // Visit W3Schools!
+
+//replace with regex example (case insensitive)
+let str2 = "Visit MICROSOFT!";
+let newStr2 = str2.replace(/MICROSOFT/i, "W3Schools");
+console.log(newStr2); // Visit W3Schools!   
+
+//replace all occurrences example
+let str3 = "apple, banana, apple, orange";
+let newStr3 = str3.replace(/apple/g, "grape");
+console.log(newStr3); // grape, banana, grape, orange
+
+//replace with function example
+let str4 = "The price is $5";   
+let newStr4 = str4.replace(/\$(\d+)/, function(match, p1) {
+    return "$" + (parseInt(p1) * 2);
+});
+console.log(newStr4); // The price is $10
+//replace with arrow function example
+let str5 = "The price is $5";   
+let newStr5 = str5.replace(/\$(\d+)/, (match, p1) => "$" + (parseInt(p1) * 2));
+console.log(newStr5); // The price is $10   
