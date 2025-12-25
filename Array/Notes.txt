@@ -1,0 +1,41 @@
+Array
+=====
+-To store multiple values in a single variable name
+    let cars = ['Tata','Honda','Maruti','Hyundai']
+-in Javascript arrays can have haterogenous elements
+    let arr = [10 , 'sachin', false, {} , [] ]
+-array elements can be accessed by referring to an index number
+    console.log(arr[1])
+
+
+Array Properties
+================
+length 
+delete
+
+
+Iterate Array elements
+=======================
+1. loop
+2. for-in
+3. for-of
+4. forEach()
+
+Array Class
+===========
+Static Functions :  Array.of() , Array.from() .....
+    ClassName.functionName
+instance Functions : object.functionName, ex: [10,20].push()
+  
+
+To add/remove elements:
+	push(...items) – adds items to the end,
+	pop() – extracts an item from the end,
+	shift() – extracts an item from the beginning,
+	unshift(...items) – adds items to the beginning.
+	splice(pos, deleteCount, ...items) – at index pos delete deleteCount elements and insert items.
+	toSpliced()   - doesn't change the original array
+	slice(start, end) – creates a new array, copies elements from position start till end (not inclusive) into it.
+	concat(...items) – returns a new array: copies all members of the current one and adds items to it. If any of items is an array, then its elements are taken.
+	with(ind,newValue) - Create a new array with a single element changed
+	

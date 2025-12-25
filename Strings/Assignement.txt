@@ -61,11 +61,16 @@ N.p:- substring() cannot accept negative indexes. slice() does.
 5. WAP to find longest word in a sentence
 	input:- 'this is javascript class'
     output:- javascript
-	
+
+   
 6. WAP to print Account number
    input:- '12345678987'
    output:- '12*******87'
    
+
+
+    
+
 7. WAP to print Credit-card number
    input:- '1111222233334444'
    output:- '1111-2222-3333-4444'
