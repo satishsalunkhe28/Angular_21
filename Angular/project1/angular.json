@@ -43,6 +43,13 @@
                   "maximumError": "8kB"
                 }
               ],
+              "scripts": [
+                 "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+              ],
+              "styles": [
+                  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "src/styles.css"
+              ],
               "outputHashing": "all"
             },
             "development": {
@@ -52,6 +59,7 @@
             }
           },
           "defaultConfiguration": "production"
+          
         },
         "serve": {
           "builder": "@angular/build:dev-server",
@@ -70,6 +78,7 @@
         }
       }
     }
+    
   }
   
 }
