@@ -1,0 +1,25 @@
+// Array Mutability/Immutability
+// In JavaScript, arrays are mutable, meaning their elements can be changed, added, or removed after the array has been created. However, some array methods return new arrays without modifying the original array, demonstrating immutability in certain operations.
+
+// Mutable Array Example
+let mutableArr = [1, 2, 3];
+console.log(`Original mutable array: ${mutableArr}`);
+mutableArr[0] = 10; // Modifying an element
+console.log(`Modified mutable array: ${mutableArr}`);
+mutableArr.push(4); // Adding an element
+console.log(`Array after push: ${mutableArr}`);
+mutableArr.pop(); // Removing an element
+console.log(`Array after pop: ${mutableArr}`);
+
+
+// Immutable Array Example
+let immutableArr = [1, 2, 3];
+console.log(`Original immutable array: ${immutableArr}`);
+let newArr = immutableArr.concat([4]); // concat returns a new array
+console.log(`New array after concat: ${newArr}`);
+console.log(`Original immutable array remains unchanged: ${immutableArr}`);
+let splicedArr = immutableArr.toSpliced(1, 1, 5); // toSpliced returns a new array
+console.log(`New array after toSpliced: ${splicedArr}`);
+console.log(`Original immutable array remains unchanged: ${immutableArr}`);
+// This demonstrates that while arrays in JavaScript are mutable, certain methods can be used to create new arrays without altering the original, showcasing immutability in specific scenarios.
+    
